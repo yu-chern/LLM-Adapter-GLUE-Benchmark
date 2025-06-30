@@ -1,0 +1,326 @@
+{
+    "soft_prompt": {
+      "sst2": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 100,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 128,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 32,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 20,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 50,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    },
+    "prefix": {
+      "sst2": {
+        "BS": 32,
+        "LR": 1e-2,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 20,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 20,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 32,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 20,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 20,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    },
+    "lora": {
+      "sst2": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "r": 16,
+        "lora_alpha": 32,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    },
+    "soft_prompt_plus_lora": {
+      "sst2": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 100,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 100,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 100,
+        "r": 16,
+        "lora_alpha": 32,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 100,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    },
+    "prefix_plus_lora": {
+      "sst2": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 10,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 10,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 10,
+        "r": 16,
+        "lora_alpha": 32,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 1e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "P_Length": 10,
+        "r": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.1,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    },
+    "ia3": {
+      "sst2": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    },
+    "single_layer_finetuning": {
+      "sst2": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 5e-3,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    },
+    "full_finetuning": {
+      "sst2": {
+        "BS": 64,
+        "LR": 2e-5,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qnli": {
+        "BS": 64,
+        "LR": 2e-5,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "mnli": {
+        "BS": 64,
+        "LR": 2e-5,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      },
+      "qqp": {
+        "BS": 64,
+        "LR": 2e-5,
+        "Epochs": 5,
+        "GRAD": 0.01,
+        "Delta": 1e-5,
+        "Epsilon": 0
+      }
+    }
+}

@@ -341,9 +341,9 @@ def train_test_all(model_name,
             
             accuracy_df.loc[dataset_name, adapter] = accuracy
             parameter_scale_df.loc[adapter, 'number of parameters'] = num_params
-            accuracy_df.to_excel(os.path.join(output_path, 
+            accuracy_df.reset_index().to_excel(os.path.join(output_path, 
                 f"accuracy_results_{file_tag}.xlsx"), index=False)
-            parameter_scale_df.to_excel(os.path.join(output_path, 
+            parameter_scale_df.reset_index().to_excel(os.path.join(output_path, 
                 f"parameter_scale_{file_tag}.xlsx"), index=False)
 
             ## TODO: (optional) write the model (adapter+dataset) into drive

@@ -10,8 +10,8 @@ This repository benchmarks **eight adapter-based fine-tuning strategies** (using
   * **Soft Prompt**, **Prefix**, **LoRA**, **Soft Prompt + LoRA**, **Prefix + LoRA**, **(IA)^3**, **Single-Layer Fine-Tuning**, **Full Fine-Tuning**
 
 * Applies the **DP-SGD** optimization algorithm with two privacy budgets:
-  * `δ = 8` (differentially private training)
-  * `δ = ∞` (standard, non-private training)
+  * `epsilon = 8` (differentially private training)
+  * `epsilon = ∞` (standard, non-private training)
 
 * Evaluates **classification accuracy** of each adapter on the corresponding GLUE validation sets.
 

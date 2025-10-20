@@ -1,0 +1,326 @@
+{
+    "soft_prompt": {
+        "sst2": {
+            "BS": 64,
+            "LR": 0.05,
+            "Epochs": 5,
+            "GRAD": 0.05,
+            "P_Length": 7,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.05,
+            "P_Length": 10,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.05,
+            "P_Length": 10,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 0.05,
+            "Epochs": 5,
+            "GRAD": 0.05,
+            "P_Length": 7,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    },
+    "prefix": {
+        "sst2": {
+            "BS": 64,
+            "LR": 0.01,
+            "Epochs": 5,
+            "GRAD": 4,
+            "P_Length": 1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 0.03,
+            "Epochs": 5,
+            "GRAD": 0.07,
+            "P_Length": 10,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 64,
+            "LR": 0.01,
+            "Epochs": 5,
+            "GRAD": 0.05,
+            "P_Length": 50,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 0.01,
+            "Epochs": 5,
+            "GRAD": 0.1,
+            "P_Length": 7,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    },
+    "lora": {
+        "sst2": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    },
+    "soft_prompt_plus_lora": {
+        "sst2": {
+            "BS": 64,
+            "LR": 0.05,
+            "Epochs": 5,
+            "GRAD": 0.05,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 1e-3,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 256,
+            "LR": 0.05,
+            "Epochs": 5,
+            "GRAD": 0.05,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 1e-3,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    },
+    "prefix_plus_lora": {
+        "sst2": {
+            "BS": 64,
+            "LR": 1e-3,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 1e-3,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "P_Length": 10,
+            "r": 8,
+            "lora_alpha": 16,
+            "lora_dropout": 0.1,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    },
+    "ia3": {
+        "sst2": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 0.005,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    },
+    "single_layer_finetuning": {
+        "sst2": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    },
+    "full_finetuning": {
+        "sst2": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qnli": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "mnli": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        },
+        "qqp": {
+            "BS": 64,
+            "LR": 2e-4,
+            "Epochs": 5,
+            "GRAD": 0.01,
+            "Delta": 1e-05,
+            "Epsilon": 8
+        }
+    }
+}

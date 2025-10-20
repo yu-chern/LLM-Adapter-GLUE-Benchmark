@@ -42,4 +42,10 @@ This repository benchmarks **eight adapter-based fine-tuning strategies** (using
 
 ---
 
+## 🏠 Run Locally with uv
+
+- Sync dependencies once: `uv sync`
+- (Optional) export a Hugging Face token so the scripts can download gated models: `export HF_TOKEN=<your-token>`
+- Launch the Python entry point (recreates the notebook flow without Colab): `uv run python llm_adapters_comparison_local/main.py --config wo_privacy`
+- Add `--force-download` the first time to cache GLUE datasets locally, and switch `--config` between `wo_privacy`, `w_privacy`, or `both` as needed.
 
